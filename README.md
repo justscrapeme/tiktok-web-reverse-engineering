@@ -75,10 +75,10 @@ Output:
   /*
   ubcode - either 0,8,12,14.
   didn't manage to infer the actual condition on which either one is chosen
-  but it seems the value is endpoint-dependant. 14 is the value for most
+  but it seems the value is endpoint-dependant. 0 is the value for most
   regular read/write endpoints.
   */
-  "2":14,
+  "2":0,
   "3":"0170be42af9a30f1cb0158c024a36b3d", // md5 of query string
   "4":"d41d8cd98f00b204e9800998ecf8427e", // md5 of body ("" for GET requests)
   "5":"b977e10d1cb26107909e97d51a688323", // md5 of user-agent

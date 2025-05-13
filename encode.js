@@ -101,7 +101,7 @@ function rand () {
 function encode({queryString, body, userAgent}) {
   let obj = {}
   obj[1] = 1
-  obj[2] = 14
+  obj[2] = 0
   obj[3] = crypto.createHash('md5').update(queryString).digest('hex')
   obj[4] = crypto.createHash('md5').update(body).digest('hex')
   obj[5] = crypto.createHash('md5').update(userAgent).digest('hex')
