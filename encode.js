@@ -194,7 +194,7 @@ function encode({queryString, body, userAgent}) {
     
     
     pos = val & 16515072
-    pos = val >> 18
+    pos = pos >> 18
     res += charSet.charAt(pos)
 
     pos = val & 258048
