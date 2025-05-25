@@ -5,6 +5,9 @@ This project aims to open-source the latest TikTok Web security query param impl
 ⭐ If you want to have:
 
 - `X-Bogus` implementation
+- `X-Gnarly` implementation in Python
+- `strData` implementation
+- `x-mssdk-info` header implementation
 - `_signature` implementation
 - Access to the managed version of the TikTok Web API
 - Exclusive offers
