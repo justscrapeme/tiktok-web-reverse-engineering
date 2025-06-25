@@ -9,6 +9,7 @@ This project aims to open-source the latest TikTok Web security query param impl
 - `strData` implementation in Python (encryption & decryption)
 - `x-mssdk-info` header implementation in Python (encryption & decryption)
 - `_signature` implementation in Python (encryption)
+- `edata` decryption in Python
 - Access to the managed version of the TikTok Web API
 - ⭐ Mass registration software
 - Mass actions scripts (comments, likes, followers)
