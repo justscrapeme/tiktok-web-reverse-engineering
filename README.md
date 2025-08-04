@@ -78,7 +78,7 @@ Output:
 
 ```js
 {
-  "0":2024114372, // 1 XOR $6 XOR $7 XOR $8 XOR $1 XOR $2
+  "0":2024114372, // $6 XOR $7 XOR $8 XOR $1 XOR $2
   "1":1, // constant
   /*
   ubcode - either 0,8,12,14.

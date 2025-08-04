@@ -112,7 +112,7 @@ function encode({queryString, body, userAgent}) {
   obj[7] = 1245783967
   obj[8] = (timestamp * 1000) % 2147483648
   obj[9] = "5.1.0"
-  obj[0] = 1 ^ obj[6] ^ obj[7] ^ obj[8] ^ obj[1] ^ obj[2]
+  obj[0] = obj[6] ^ obj[7] ^ obj[8] ^ obj[1] ^ obj[2]
 
   let arr = [Object.keys(obj).length]
 
