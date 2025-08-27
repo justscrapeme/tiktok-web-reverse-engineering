@@ -13,6 +13,7 @@ This project aims to open-source the latest TikTok Web security query param impl
 - `_signature` implementation in Python (encryption)
 - `edata` decryption in Python
 - Access to the managed version of the TikTok Web API
+- ⭐ [TikTok Captcha Solver](https://github.com/justscrapeme/tiktok-captcha-solver)
 - ⭐ Mass registration software
 - Mass actions scripts (comments, likes, followers)
 - Exclusive offers
