@@ -12,7 +12,8 @@ This project aims to open-source the latest TikTok Web security query param impl
 - `strData` implementation in Python (encryption & decryption)
 - `x-mssdk-info` header implementation in Python (encryption & decryption)
 - `_signature` implementation in Python (encryption)
-- `edata` decryption in Python
+- `edata` implementation in Python (encryption & decryption)
+- `tt-ticket-guard-client-data` & `tt-ticket-guard-public-key` implementation in Python
 - Access to the managed version of the TikTok Web API
 - ⭐ [TikTok Captcha Solver](https://github.com/justscrapeme/tiktok-captcha-solver)
 - ⭐ Mass registration software
