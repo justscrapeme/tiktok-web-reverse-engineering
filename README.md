@@ -6,6 +6,7 @@ This project aims to open-source the latest TikTok Web security query param impl
 
 - `X-Bogus` implementation in Python (encryption & decryption)
 - `X-Gnarly` implementation in Python (encryption & decryption)
+  - Version 5.1.3 (03.11.2025)
   - Version 5.1.2 (07.09.2025)
   - Version 5.1.1 (28.06.2025)
   - Version 5.1.0 (10.05.2025)
