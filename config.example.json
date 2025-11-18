@@ -1,0 +1,97 @@
+{
+  "accounts": [
+    {
+      "username": "account1",
+      "sessionId": "sessionid_cookie_value_here",
+      "msToken": "msToken_value_here",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36...",
+      "cookies": {
+        "sessionid": "your_session_id",
+        "msToken": "your_ms_token",
+        "tt_chain_token": "your_chain_token"
+      }
+    }
+  ],
+  "warming": {
+    "enabled": true,
+    "activities": {
+      "scroll": {
+        "enabled": true,
+        "minScrolls": 5,
+        "maxScrolls": 15,
+        "scrollSpeedMin": 1000,
+        "scrollSpeedMax": 3000
+      },
+      "videoWatch": {
+        "enabled": true,
+        "minWatchTime": 3000,
+        "maxWatchTime": 30000,
+        "minVideos": 3,
+        "maxVideos": 10
+      },
+      "search": {
+        "enabled": true,
+        "queries": ["trending", "funny", "music"],
+        "minSearches": 1,
+        "maxSearches": 3
+      }
+    },
+    "humanization": {
+      "randomDelayMin": 2000,
+      "randomDelayMax": 8000,
+      "typingSpeedMin": 100,
+      "typingSpeedMax": 300,
+      "mouseMovementSimulation": true,
+      "pauseProbability": 0.3,
+      "pauseDurationMin": 1000,
+      "pauseDurationMax": 5000
+    }
+  },
+  "profile": {
+    "enabled": false,
+    "avatarFolder": "./avatars",
+    "bioFile": "./bios.txt",
+    "bioLines": [
+      "Living my best life 🌟",
+      "Content creator | Dreamer",
+      "Just vibing ✨"
+    ],
+    "updateAvatar": true,
+    "updateBio": true
+  },
+  "massActions": {
+    "commenting": {
+      "enabled": false,
+      "videoUrl": "https://www.tiktok.com/@username/video/1234567890",
+      "videoId": "1234567890",
+      "comments": [
+        "Amazing content! 🔥",
+        "Love this! ❤️",
+        "So good! 👏",
+        "Keep it up! 💪"
+      ],
+      "delayBetweenCommentsMin": 5000,
+      "delayBetweenCommentsMax": 15000,
+      "randomizeOrder": true
+    },
+    "commentLiking": {
+      "enabled": false,
+      "videoUrl": "https://www.tiktok.com/@username/video/1234567890",
+      "videoId": "1234567890",
+      "commentId": "7234567890123456789",
+      "delayBetweenLikesMin": 3000,
+      "delayBetweenLikesMax": 10000
+    }
+  },
+  "scheduling": {
+    "runIntervalMin": 3600000,
+    "runIntervalMax": 7200000,
+    "randomizeStartTime": true,
+    "maxRunsPerDay": 5
+  },
+  "logging": {
+    "enabled": true,
+    "logFile": "./logs/warmer.log",
+    "logLevel": "info"
+  }
+}

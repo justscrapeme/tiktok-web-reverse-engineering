@@ -23,6 +23,20 @@ This project aims to open-source the latest TikTok Web security query param impl
 
 Reach out to [t.me/justscrape](https://t.me/justscrape) to discuss a solution tailored to your needs.
 
+## Features
+
+### 🤖 Mass Account Warmer
+
+A comprehensive account warming and automation system with:
+
+- **Humanized Activity Simulation**: Natural scrolling, video watching, and search behaviors
+- **Mass Profile Updates**: Bulk avatar and bio uploads for multiple accounts
+- **Mass Commenting**: Post comments on specific TikTok videos from multiple accounts
+- **Mass Comment Liking**: Boost specific comments with multiple accounts
+- **Fully Configurable**: All features controlled via `config.json`
+
+See [Account Warmer Usage](#account-warmer-usage) section below for detailed instructions.
+
 ## Usage
 
 ### Encoding
@@ -102,6 +116,131 @@ Output:
 ```
 
 After this object is crafted, it's encoded using some cryptography.
+
+## Account Warmer Usage
+
+### Setup
+
+1. Copy the example configuration:
+```bash
+cp config.example.json config.json
+```
+
+2. Edit `config.json` and add your TikTok accounts with session cookies
+
+3. (Optional) Add avatar images to `./avatars/` folder
+
+4. (Optional) Create or edit `bios.txt` with bio options (one per line)
+
+### Running the Warmer
+
+Run all enabled features:
+```bash
+node accountWarmer.js
+```
+
+Or specify a custom config file:
+```bash
+node accountWarmer.js ./my-config.json
+```
+
+### Configuration
+
+The `config.json` file controls all features:
+
+#### Account Warming
+Enable natural activity simulation:
+```json
+{
+  "warming": {
+    "enabled": true,
+    "activities": {
+      "scroll": { "enabled": true, "minScrolls": 5, "maxScrolls": 15 },
+      "videoWatch": { "enabled": true, "minVideos": 3, "maxVideos": 10 },
+      "search": { "enabled": true, "queries": ["trending", "funny"] }
+    },
+    "humanization": {
+      "randomDelayMin": 2000,
+      "randomDelayMax": 8000,
+      "pauseProbability": 0.3
+    }
+  }
+}
+```
+
+#### Mass Profile Updates
+Update avatars and bios:
+```json
+{
+  "profile": {
+    "enabled": true,
+    "avatarFolder": "./avatars",
+    "bioFile": "./bios.txt",
+    "updateAvatar": true,
+    "updateBio": true
+  }
+}
+```
+
+#### Mass Commenting
+Comment on a specific video:
+```json
+{
+  "massActions": {
+    "commenting": {
+      "enabled": true,
+      "videoUrl": "https://www.tiktok.com/@username/video/1234567890",
+      "comments": [
+        "Amazing content! 🔥",
+        "Love this! ❤️"
+      ],
+      "delayBetweenCommentsMin": 5000,
+      "delayBetweenCommentsMax": 15000
+    }
+  }
+}
+```
+
+#### Mass Comment Liking
+Like a specific comment:
+```json
+{
+  "massActions": {
+    "commentLiking": {
+      "enabled": true,
+      "videoUrl": "https://www.tiktok.com/@username/video/1234567890",
+      "commentId": "7234567890123456789",
+      "delayBetweenLikesMin": 3000,
+      "delayBetweenLikesMax": 10000
+    }
+  }
+}
+```
+
+### Features
+
+- **Humanization**: Random delays, typing simulation, scroll patterns, and pause behaviors
+- **Safety**: Built-in delays and randomization to avoid detection
+- **Flexibility**: Enable/disable any feature independently
+- **Scalability**: Support for unlimited accounts
+- **Logging**: Detailed console output for monitoring
+
+### Project Structure
+
+```
+tiktok-web-reverse-engineering/
+├── accountWarmer.js           # Main entry point
+├── config.example.json        # Example configuration
+├── bios.example.txt          # Example bio lines
+├── utils/
+│   ├── accountManager.js     # Account loading and management
+│   ├── humanization.js       # Humanization utilities
+│   └── tiktokClient.js       # TikTok API client wrapper
+└── modules/
+    ├── warmingActivities.js  # Activity simulation
+    ├── profileManager.js     # Avatar/bio management
+    └── interactionModule.js  # Commenting and liking
+```
 
 ## License
 

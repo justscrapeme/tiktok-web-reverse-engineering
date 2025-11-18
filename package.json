@@ -1,9 +1,20 @@
 {
   "name": "tiktok-web-reverse-engineering",
   "version": "1.0.0",
-  "scripts": {},
-  "keywords": [],
+  "description": "TikTok Web security implementation (X-Gnarly) and mass account warmer",
+  "main": "encode.js",
+  "scripts": {
+    "warm": "node accountWarmer.js",
+    "warm:config": "node accountWarmer.js config.json"
+  },
+  "keywords": [
+    "tiktok",
+    "x-gnarly",
+    "reverse-engineering",
+    "automation",
+    "account-warmer",
+    "mass-actions"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT"
 }
