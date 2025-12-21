@@ -83,7 +83,7 @@ Output:
 ```js
 {
   "0":2024114372, // $6 XOR $7 XOR $8 XOR $1 XOR $2
-  "1":1, // constant
+  "1":1, // envcode (1 means trusted/legitimate user-looking environment)
   /*
   ubcode - either 0,8,12,14.
   didn't manage to infer the actual condition on which either one is chosen
