@@ -2,24 +2,29 @@
 
 This project aims to open-source the latest TikTok Web security query param implementation called `X-Gnarly`.
 
-⭐ If you want to have:
+**If you want**:
 
-- `X-Bogus` implementation in Python (encryption & decryption)
-- `X-Gnarly` implementation in Python (encryption & decryption)
-  - Version 5.1.3 (03.11.2025)
-  - Version 5.1.2 (07.09.2025)
-  - Version 5.1.1 (28.06.2025)
-  - Version 5.1.0 (10.05.2025)
-- `strData` implementation in Python (encryption & decryption)
-- `x-mssdk-info` header implementation in Python (encryption & decryption)
-- `_signature` implementation in Python (encryption)
-- `edata` implementation in Python (encryption & decryption)
-- `tt-ticket-guard-client-data` & `tt-ticket-guard-public-key` implementation in Python
-- Access to the managed version of the TikTok Web API
+- 🤝 Work together on any part of TikTok Web
+- <details>
+  <summary>🔐 Signing algorithms API</summary>
+
+  - `X-Bogus`
+  - `X-Gnarly`
+    - Version 5.1.3 (03.11.2025)
+    - Version 5.1.2 (07.09.2025)
+    - Version 5.1.1 (28.06.2025)
+    - Version 5.1.0 (10.05.2025)
+  - `strData`
+  - `x-mssdk-info`
+  - `_signature`
+  - `edata`
+  - `tt-ticket-guard-client-data` & `tt-ticket-guard-public-key`
+  </details>
+
+- 👨‍💻 Fully-managed TikTok Web API (low price, excellent performance, high rate limits)
 - ⭐ [TikTok Captcha Solver](https://github.com/justscrapeme/tiktok-captcha-solver)
-- ⭐ Mass registration software
-- Mass actions scripts (comments, likes, followers)
-- Exclusive offers
+- ⭐ Mass actions software (comments, likes, followers & others)
+- ⭐ Exclusive offers
 
 Reach out to [t.me/justscrape](https://t.me/justscrape) to discuss a solution tailored to your needs.
 
