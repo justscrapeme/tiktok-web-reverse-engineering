@@ -21,6 +21,8 @@ This project aims to open-source the latest TikTok Web security query param impl
   - `_signature`
   - `edata`
   - `tt-ticket-guard-client-data` & `tt-ticket-guard-public-key`
+  - `ecData`
+  - `ztca-dpop`
   </details>
 
 - 👨‍💻 Fully-managed TikTok Web API (low price, excellent performance, high rate limits)
