@@ -10,6 +10,7 @@ This project aims to open-source the latest TikTok Web security query param impl
 
   - `X-Bogus`
   - `X-Gnarly`
+    - Version 5.3.2 (13.09.2026)
     - Version 5.3.1 (27.07.2026)
     - Version 5.3.0 (07.07.2026)
     - Version 5.2.1 (18.05.2026)
